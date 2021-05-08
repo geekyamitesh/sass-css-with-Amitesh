@@ -8,11 +8,10 @@ Dark green: #28b485
 */
 
 /*
+Advanced CSS
 1. Linear-gradiant property of background images
-
-
-
-
+2. Clip-Path : Polygon()
+websites: https://bennettfeely.com/clippy/
 
 */
 
@@ -29,12 +28,14 @@ body{
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 30px;
 }
 
 
 .header{
     height: 95vh;
-    background-image:linear-gradient(to right bottom,rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.781)), url("../img/hero.jpg");
+    background-image:linear-gradient(to right bottom,rgba(126, 213, 111, 0.808), rgba(40, 180, 131, 0.8)), url("../img/hero.jpg");
     background-size:cover ;
     background-position: top;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100% );
 }
